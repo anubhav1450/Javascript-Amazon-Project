@@ -1,7 +1,12 @@
 import {cart, removeFromCart} from '../data/cart.js';
 import {products} from '../data/products.js';
 import {formatCurrency} from './utils/money.js';
-console.log(dayjs());
+import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
+import { getDeliveryOption } from '../data/deliveryOptions.js';
+
+const today  = dayjs();
+console.log(today.format('dddd, MMMM D'));
+
 
 let cartSummaryHTML = '';
 
